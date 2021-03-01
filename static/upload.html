@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>eCommerce template By Adobe Dreamweaver CC</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="Assets/styles/eCommerceStyle.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="mainWrapper">
+  <header> 
+    <!-- This is the header content. It contains Logo and links -->
+    <div id="logo"><!-- <img src="Assets/images/logo.png" alt="iamge caption" width="150" height="50">>
+      <!-- Company Logo text --> 
+       iamge caption</div>
+    <div id="headerLinks"><a href="static/upload.html" title="upload">上传测试图片</a><a href="static/index.html" title="Sample">生成实例</a></div>
+  </header>
+  <section id="offer" style="background: url(static/Assets/images/bg.png) no-repeat">
+    <!-- The offer section displays a banner text for promotions -->
+    <h2>图像描述语言生成</h2>
+    <p>利用自然语言处理和图像特征提取融合生成标题</p>
+	  
+  </section>
+  <div id="content">
+<HR align=center width=500 color=#987cb9 SIZE=1>
+    <h1 style="margin-top: 700;text-align: center;color:#778899" class = "logo">图 像 描 述 性 文 本 生 成</h1>
+    <HR align=center width=500 color=#987cb9 SIZE=1>
+    <br>
+    <p style="margin:0 auto;text-align: center; color: rgba(146,146,146,1.00);">上传一张测试图片</p>
+    <br>
+
+    <style>
+        .frame{width:1000px;height:600px;margin:0 auto;border:solid 2px #778899}
+    </style>
+
+
+<style type="text/css">
+.comments { width:100%; overflow:auto; word-break:break-all;}
+</style>
+
+
+    <div class="frame">
+    <form action="" enctype='multipart/form-data' method='POST' style="margin:0 auto;text-align: center;">
+        <input type="file" name="file" style="margin-top:20px;text-align: center;"/>
+        <input type="submit" value="上传" class="button-new" style="margin-top:15px;text-align: center;"/>
+        <br>
+
+    </form>
+
+
+        <div id="main" style="width:100%;margin-top: 50px;margin-left: 10%;margin-right:10%">
+
+            <div id="left" style="width:40%;float:left;">
+
+                <img src="{{ url_for('static', filename= './images/test.jpg') }}"
+                width="400" height="400" style="margin-left: 30; margin-top: 30;text-align: center;"/>
+            </div>
+            <div id="right" style="width:50%;float:left;">
+                <div style="width:400px;height:400px;margin:0 auto;border:dashed  1px #778899 ">
+                    <div style="text-align: center;">
+                        <br>
+                        生成描述
+                        <br>
+                        <HR align=center width=200 color=#778899 SIZE=1>
+                        示例一
+                        <br>
+                        {{ caption_list[0] }}
+                    </div>
+                    <div style="text-align: center;">
+                        <HR align=center width=200 color=#778899 SIZE=1>
+                        示例二
+                        <br>
+                        {{ caption_list[1] }}
+                    </div>
+                    <div style="text-align: center;">
+                        <HR align=center width=200 color=#778899 SIZE=1>
+                        示例三
+                        <br>
+                        {{ caption_list[2] }}
+                    </div>
+                    <div style="text-align: center;">
+                        <HR align=center width=200 color=#778899 SIZE=1>
+                        示例四
+                        <br>
+                        {{ caption_list[3] }}
+                    </div>
+                    <div style="text-align: center;">
+                        <HR align=center width=200 color=#778899 SIZE=1>
+                        示例五
+                        <br>
+                        {{ caption_list[4] }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
