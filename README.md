@@ -36,6 +36,8 @@
 
 ## Download Other Files
 
+*  url：https://pan.baidu.com/s/1mikWDTROKM8mTOtkI0P0Dw 
+*  code：zung 
 *  tools\sample\val：  
 results2-8200.json  
 results2-8200-Flickr8k-CN.json  
